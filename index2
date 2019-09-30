@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>こんにちは</title>
+</head>
+
+<!--
+<script type="text/javascript">
+	window.alert("おめでとーう");
+</script>
+-->
+
+<body>
+	<a href = "index.html"><img src="touch.png" alt="touch"></a>
+</body>
+</html>
