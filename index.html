@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="no">
+
 	<title>こんにちは</title>
 </head>
 
@@ -14,9 +15,49 @@
 </script>
 -->
 
+<script type="text/javascript">
+	function check(sel2,sel3){
+
+		if (sel2 == "10月" && sel3 == "3日"){
+			top.location.href="ex1.html";
+
+		}else{
+			alert("誕生日を入力してください");
+		}
+	}
+	</script>
+
 <body>
-	<p class = touch_here> 
-	<a href = "ex1.html"><img src="touch_here.png" alt="touch"></a>
+
+
+	<p class = birth>
+	<form>
+
+		<select name="sel2">
+			<option value="#"></option>
+			<script type="text/javascript">
+			for(var i=1;i<13;i++){
+				document.writeln("<option>" +i + "月</option>");
+			}
+			</script>
+		</select>
+
+		<select name="sel3">
+			<option value="#"></option>
+			<script type="text/javascript">
+			for(var i=1;i<32;i++){
+				document.writeln("<option>" +i + "日</option>");
+			}
+			</script>
+
+		</select>
+	<input type=button value="決定" onClick="return check(sel2.value,sel3.value)">
+		
+	</form>
 	</p>
+
+	<p class = touch_here> 
+	<img src="touch_here.png" alt="touch">
+	</p>	
 </body>
 </html>
